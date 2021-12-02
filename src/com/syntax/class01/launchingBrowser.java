@@ -12,12 +12,12 @@ public class launchingBrowser {
         driver.get("https://www.google.com/");
 
         //return the current url loaded in the browser
-        String url = driver.getCurrentUrl();
-        System.out.println("The current URL loaded in browser is : " + url);
+        //String url = driver.getCurrentUrl();
+        System.out.println("The current URL loaded in browser is : " + driver.getCurrentUrl());
 
         //return the title of the current page in the browser
-        String title = driver.getTitle();
-        System.out.println("The current title of the page is : " + title);
+        //String title = driver.getTitle();
+        System.out.println("The current title of the page is : " + driver.getTitle());
 
         //close the browser
         driver.quit();
