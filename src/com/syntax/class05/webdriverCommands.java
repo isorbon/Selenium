@@ -21,6 +21,7 @@ public class webdriverCommands {
         userName.sendKeys("Tester");
         Thread.sleep(1500);
 
+
         driver.quit();
     }
 }

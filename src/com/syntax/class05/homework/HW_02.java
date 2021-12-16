@@ -25,6 +25,7 @@ public class HW_02 {
         WebElement message = driver.findElement(By.cssSelector("span#spanMessage"));
         System.out.println(message.getText());
 
+
         Thread.sleep(2000);
         driver.quit();
     }

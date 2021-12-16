@@ -33,7 +33,7 @@ public class HW_01 {
             if (!getTextLink.isEmpty()){
                 String linkHasText = textLink.getAttribute("href");
                 System.out.println(linkHasText);
-                System.out.println("--------------");
+                System.out.println("----------------");
             }
         }
 

@@ -36,6 +36,7 @@ public class radioButtons {
         isSelected=femaleRadioBtn.isSelected();
         System.out.println("The female radio Btn is Selected on the webpage: " + isSelected);
 
+
         driver.quit();
     }
 }

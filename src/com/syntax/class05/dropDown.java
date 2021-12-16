@@ -32,6 +32,5 @@ public class dropDown {
 // select by Value
         select.selectByValue("Friday");
 
-
     }
 }

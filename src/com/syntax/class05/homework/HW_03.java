@@ -45,7 +45,8 @@ public class HW_03 {
         WebElement signupBtn = driver.findElement(By.xpath("//button[@name='websubmit']"));
         signupBtn.click();
 
-        Thread.sleep(4000);
+        Thread.sleep(5000);
 
+        driver.quit();
     }
 }

@@ -34,7 +34,7 @@ public class driverCommands {
                 String linkAddress = link.getAttribute("href");
                 System.out.println(linkAddress);
 
-                System.out.println("-------------------------");
+                System.out.println("---------------------------");
             }
         }
 

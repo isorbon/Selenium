@@ -36,7 +36,7 @@ public class HW_04 {
         searchBtn.click();
 
         Thread.sleep(2000);
-        System.out.println("-------------------------------");
+        System.out.println("---------------------------------");
 
         // verify the title of page
         String pageTitle = driver.getTitle();
