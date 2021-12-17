@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class dropDown {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "Driver/geckodriver.exe");
@@ -30,7 +32,22 @@ public class dropDown {
      /*   select.selectByVisibleText("Thursday"); */
 
 // select by Value
-        select.selectByValue("Friday");
+        //select.selectByValue("Friday");
+
+// select by .getOptions and gets all from tag Option
+        List<WebElement> allOptions = select.getOptions();
+        int Size = allOptions.size();
+        System.out.println(Size);
+
+        // iterate through list all options and get the text of each option
+     /*   for (WebElement all:allOptions) {
+            System.out.println(all.getText());
+        }*/
+        //or do like this:
+        for (int i=1; i<Size; i++){
+            String optionText = allOptions.get(i).getText();
+            System.out.println(optionText);
+        }
 
     }
 }
