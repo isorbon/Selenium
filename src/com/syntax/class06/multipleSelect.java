@@ -42,7 +42,7 @@ public class multipleSelect {
         Thread.sleep(2000);
         select.deselectAll(); // deselectAll selected options
 
-// to use iterator to get all the options text and print in console
+        // to use iterator to get all the options text and print in console
         List<WebElement> option = select.getOptions();
 
         Iterator<WebElement> iterator = option.iterator();

@@ -35,7 +35,7 @@ public class alerts {
         Alert promptAlert = driver.switchTo().alert();
         System.out.println(promptAlert.getText()); // getting text from alert
         promptAlert.sendKeys("Any Text"); // sending text to alert
-        promptAlert.accept(); // click to the OK button
+        promptAlert.accept();  // click to the OK button
 
     }
 }
