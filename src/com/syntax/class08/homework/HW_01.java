@@ -3,7 +3,7 @@ package com.syntax.class08.homework;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -13,15 +13,13 @@ public class HW_01 {
       click on follow on instagram
       get the title and of new window and print it on the console */
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "Driver/geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
         driver.get("http://syntaxprojects.com/window-popup-modal-demo.php");
         driver.manage().window().maximize();
 
         WebElement instaBtn = driver.findElement(By.xpath("//a[contains(@title, 'Instagram')]"));
         instaBtn.click();
-
-        Thread.sleep(5000);
 
         Set<String> allWindowsHandles = driver.getWindowHandles();
 
