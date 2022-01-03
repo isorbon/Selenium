@@ -51,7 +51,7 @@ public class examplePagination {
                     // we found the data, and we stop the loop and say to next btn not to click
                     notFound = false;
                     // check the checkbox associate with the id
-                    driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr/td/input")).click();
+                    driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr[" + (i + 1) + "]/td/input")).click();
                     break;
                 }
             }
