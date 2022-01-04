@@ -28,7 +28,7 @@ public class actionClass {
         // drag the source to drop off
         // action.dragAndDrop(draggable,dropOff).perform();
 
-        // whenever more than two methods use build
+        // whenever more than two methods used build
         action.clickAndHold(draggable).moveToElement(dropOff).release().build().perform();
 
     }

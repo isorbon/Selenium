@@ -29,7 +29,7 @@ public class CalenarWithPagination {
         // get the next button
         WebElement nextBtn = driver.findElement(By.xpath("//button[text()='Next Month']"));
 
-        // goro the month September
+        // goto the month September
         boolean notFound = true;
         while (notFound) {
             if (month.getText().equalsIgnoreCase("September 2022")) {

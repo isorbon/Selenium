@@ -35,7 +35,7 @@ public class takingScreenshot {
         try {
             // copy the screenshot to a new directory inside the project and
             // give the path to that particular screenshot
-            FileUtils.copyFile(sourceFile, new File("screenshot/login/adminlogin.png"));
+            FileUtils.copyFile(sourceFile, new File("screenshots/login/adminlogin.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

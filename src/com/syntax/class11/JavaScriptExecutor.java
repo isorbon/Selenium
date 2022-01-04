@@ -23,7 +23,7 @@ public class JavaScriptExecutor {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         jsExecutor.executeScript("arguments[0].style.border='2px solid red'", username);
         jsExecutor.executeScript("arguments[0].style.background='yellow'", password);
-     //   jsExecutor.executeScript("arguments[0].click()", btn);
+      //  jsExecutor.executeScript("arguments[0].click()", btn);
 
         // using the KEYS
         username.sendKeys("Admin", Keys.TAB);

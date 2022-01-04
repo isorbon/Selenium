@@ -20,10 +20,10 @@ public class uploadFile {
         // locate the choose file button
         WebElement chooseFile = driver.findElement(By.cssSelector("input#file-upload"));
 
-        // in order to upload the file
-        chooseFile.sendKeys("C:\\Users\\DarAmal\\Selenium\\screenshot\\login\\adminlogin.png");
+        // in order to upload the file from computer, we use sendKeys method
+        chooseFile.sendKeys("C:\\Users\\DarAmal\\Selenium\\screenshots\\login\\adminlogin.png");
 
-        // locate the submit btn and click upload
+        // locate to submit btn and click upload
         driver.findElement(By.cssSelector("input#file-submit")).click();
 
     }
