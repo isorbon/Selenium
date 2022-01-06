@@ -39,5 +39,4 @@ public class CommonMethods extends BaseClass {
             e.printStackTrace();
         }
     }
-
 }
