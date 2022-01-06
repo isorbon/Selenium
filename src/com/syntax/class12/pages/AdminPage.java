@@ -11,7 +11,6 @@ public class AdminPage extends CommonMethods {
     @FindBy(css = "select#searchSystemUser_userType") public WebElement select;
     @FindBy(css = "input#searchBtn") public WebElement searchBtn;
 
-
     public AdminPage(){
         PageFactory.initElements(driver, this);
     }

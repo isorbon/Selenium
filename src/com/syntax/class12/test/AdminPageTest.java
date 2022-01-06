@@ -27,6 +27,5 @@ public class AdminPageTest {
         adminPage.searchBtn.click();
 
         CommonMethods.takeScreenShot("hrms", "adminpage");
-
     }
 }
