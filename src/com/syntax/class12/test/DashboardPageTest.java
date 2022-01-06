@@ -22,7 +22,7 @@ public class DashboardPageTest {
         WebElement welcomeElem = dashboardPage.welcome;
         CommonMethods.printGetText(welcomeElem);
 
-        CommonMethods.takeScreenShot("dashboard");
+        CommonMethods.takeScreenShot("hrms", "dashboard");
 
     }
 }
